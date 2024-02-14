@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nextcitrus *.css
+recursive-include nextcitrus *.csv
+recursive-include nextcitrus *.html
+recursive-include nextcitrus *.ico
+recursive-include nextcitrus *.js
+recursive-include nextcitrus *.json
+recursive-include nextcitrus *.md
+recursive-include nextcitrus *.png
+recursive-include nextcitrus *.py
+recursive-include nextcitrus *.svg
+recursive-include nextcitrus *.txt
+recursive-exclude nextcitrus *.pyc
