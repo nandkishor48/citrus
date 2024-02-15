@@ -18,7 +18,7 @@ class ItemDetails(Document):
 				'date':i.get('date')
 			})
 		frappe.sendmail(
-        recipients=["nand.jadhao@gmail.com"],
+        recipients=[self.email],
 		subject="Sales Invoices",
         template="custom_email_template",
         args={"invoices": doc},
