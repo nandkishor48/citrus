@@ -1,0 +1,24 @@
+<!-- custom_app_name/custom_app_name/custom_app_name/email_templates/custom_email_template.html -->
+
+<html>
+<head>
+    <title>Sales Invoice Details</title>
+</head>
+<body>
+  <table>
+    {% for invoice in invoices %}
+    <th>
+        <tr>Sales Invoice Name</tr>
+        <tr>Date</tr>
+    </th>
+    <td>
+        <tr>
+            {{invoice.get('name')}}
+        </tr>
+        <tr>{{invoice.get("creation")}}</tr>
+    </td>
+    {% endfor %}
+
+  </table>  
+</body>
+</html>
